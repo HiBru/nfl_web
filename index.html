@@ -42,9 +42,11 @@
 
     <nav class="nav__links" aria-label="Hauptnavigation">
       <a href="#about" data-i18n="nav.about">Profil</a>
-      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#skills" data-i18n="nav.skills">Hard Skills</a>
       <a href="#project" data-i18n="nav.project">Projekt</a>
+      <a href="#highlights" data-i18n="nav.highlights">Highlights</a>
       <a href="#experience" data-i18n="nav.experience">Erfahrung</a>
+      <a href="#softskills" data-i18n="nav.softskills">Soft Skills</a>
       <a href="#education" data-i18n="nav.education">Bildung</a>
       <a href="#contact" data-i18n="nav.contact">Kontakt</a>
     </nav>
@@ -84,7 +86,13 @@
 
           <div class="hero__cta">
             <a href="#contact" class="btn btn--primary" data-i18n="hero.cta_contact">Kontakt aufnehmen</a>
-            <a href="#project" class="btn btn--ghost" data-i18n="hero.cta_project">Aktuelles Projekt</a>
+            <a href="assets/cv/Lebenslauf_Sebastian_Hinz.pdf" class="btn btn--ghost" download>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              <span data-i18n="hero.cta_cv">Lebenslauf (PDF)</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-hinz-88b16917a" class="btn btn--icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
           </div>
 
           <ul class="hero__stats">
@@ -159,7 +167,7 @@
     <section class="section" id="skills">
       <div class="section__head reveal">
         <span class="section__index">02</span>
-        <h2 data-i18n="skills.title">Technologien &amp; Kenntnisse</h2>
+        <h2 data-i18n="skills.title">Hard Skills</h2>
       </div>
       <p class="section__sub reveal" data-i18n="skills.sub">
         Ein Querschnitt der Technologien, mit denen ich produktiv arbeite — mit Schwerpunkt auf
@@ -315,10 +323,58 @@
       </div>
     </section>
 
+    <!-- ===== Project Highlights ===== -->
+    <section class="section" id="highlights">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 data-i18n="highlights.title">Projekt-Highlights</h2>
+      </div>
+      <p class="section__sub reveal" data-i18n="highlights.sub">
+        Ausgewählte Projekte aus meiner Agenturzeit — von Forschung über Media-Streaming bis E-Commerce.
+      </p>
+
+      <div class="hl-grid">
+        <article class="card hl-card reveal">
+          <span class="hl-card__tag" data-i18n="hl.dlr_tag">Forschung &amp; High-Tech</span>
+          <h3 data-i18n="hl.dlr_t">DLR — Mobilitätsdaten</h3>
+          <p data-i18n="hl.dlr_d">App zur Erhebung individueller Mobilitätsdaten für das DLR mit hochpräzisem Tracking und Google-Maps-Integration.</p>
+          <ul class="chips chips--sm"><li class="chip">GPS-Sensorik</li><li class="chip">Google Maps SDK</li></ul>
+        </article>
+
+        <article class="card hl-card reveal">
+          <span class="hl-card__tag" data-i18n="hl.sat_tag">Geodaten &amp; Visualisierung</span>
+          <h3 data-i18n="hl.sat_t">Infrastruktur-Überwachung</h3>
+          <p data-i18n="hl.sat_d">Visualisierung komplexer Satellitendaten mit Mapbox inklusive spezialisierter Custom-Layer.</p>
+          <ul class="chips chips--sm"><li class="chip">Mapbox SDK</li><li class="chip">Custom Layer</li></ul>
+        </article>
+
+        <article class="card hl-card reveal">
+          <span class="hl-card__tag" data-i18n="hl.hs_tag">Lifestyle &amp; Coaching</span>
+          <h3 data-i18n="hl.hs_t">„Higher Self“</h3>
+          <p data-i18n="hl.hs_d">Robuster Video-/Musikplayer für On-Demand-Coaching inkl. Hintergrund-Wiedergabe und Lockscreen-Steuerung.</p>
+          <ul class="chips chips--sm"><li class="chip">ExoPlayer / Media3</li><li class="chip">Background Services</li></ul>
+        </article>
+
+        <article class="card hl-card reveal">
+          <span class="hl-card__tag" data-i18n="hl.ec_tag">E-Commerce &amp; Retail</span>
+          <h3 data-i18n="hl.ec_t">DefShop &amp; Berlin Fashion Week</h3>
+          <p data-i18n="hl.ec_d">Mitentwicklung des mobilen Shopsystems für DefShop sowie der offiziellen App der Berlin Fashion Week.</p>
+          <ul class="chips chips--sm"><li class="chip">Retrofit</li><li class="chip">Clean Architecture</li></ul>
+        </article>
+
+        <article class="card hl-card reveal">
+          <span class="hl-card__tag" data-i18n="hl.fit_tag">Fitness</span>
+          <h3 data-i18n="hl.fit_t">FitX — Mitglieder-App</h3>
+          <p data-i18n="hl.fit_d">Mitentwicklung der Mitglieder-App zur Trainingssteuerung und Studio-Interaktion.</p>
+          <ul class="chips chips--sm"><li class="chip">Kotlin</li><li class="chip">MVVM</li></ul>
+        </article>
+      </div>
+    </section>
+
     <!-- ===== Experience ===== -->
     <section class="section" id="experience">
       <div class="section__head reveal">
-        <span class="section__index">04</span>
+        <span class="section__index">05</span>
         <h2 data-i18n="experience.title">Berufserfahrung</h2>
       </div>
 
@@ -357,12 +413,10 @@
             <h3 class="tl-item__role" data-i18n="exp.ap_role">Android Developer</h3>
             <p class="tl-item__company" data-i18n="exp.ap_company">apprime GmbH · App-Agentur Berlin</p>
             <ul class="tl-item__points">
-              <li data-i18n="exp.ap_1"><strong>DLR (Forschung):</strong> App zur Erhebung individueller Mobilitätsdaten — hochpräzises Tracking &amp; Google-Maps-Integration.</li>
-              <li data-i18n="exp.ap_2"><strong>Infrastrukturüberwachung:</strong> Visualisierung komplexer Satellitendaten mit Mapbox inkl. spezialisierter Custom-Layer.</li>
-              <li data-i18n="exp.ap_3"><strong>„Higher Self“:</strong> Robuster Video-/Musikplayer für On-Demand-Coaching inkl. Hintergrund-Wiedergabe &amp; Lockscreen-Steuerung.</li>
-              <li data-i18n="exp.ap_4"><strong>E-Commerce:</strong> Mitentwicklung des Shopsystems von DefShop sowie der App der Berlin Fashion Week.</li>
-              <li data-i18n="exp.ap_5"><strong>FitX:</strong> Mitentwicklung der Mitglieder-App zur Trainingssteuerung und Studio-Interaktion.</li>
-              <li data-i18n="exp.ap_6">Migration von Java/MVP zu Kotlin/MVVM zur Optimierung von Wartbarkeit und Performance.</li>
+              <li data-i18n="exp.ap_1"><strong>Projektbegleitung:</strong> Unterstützung aller Projektphasen — von Anforderungsanalyse und Architekturplanung über die Implementierung bis zum Release.</li>
+              <li data-i18n="exp.ap_2"><strong>Architektur-Modernisierung:</strong> Migration von Java/MVP zu Kotlin/MVVM zur Optimierung von Wartbarkeit und Performance.</li>
+              <li data-i18n="exp.ap_3"><strong>Media-Integration:</strong> Komplexe Media-Streaming-Lösungen (Audio/Video) mit Background-Services und State-Management.</li>
+              <li data-i18n="exp.ap_4"><strong>Mentoring &amp; Qualität:</strong> Einarbeitung neuer Kolleg:innen sowie hohe Code-Qualität durch Code-Reviews und Best Practices.</li>
             </ul>
             <ul class="chips chips--sm">
               <li class="chip">Kotlin</li><li class="chip">Java</li><li class="chip">ExoPlayer / Media3</li>
@@ -373,10 +427,46 @@
       </div>
     </section>
 
+    <!-- ===== Soft Skills ===== -->
+    <section class="section" id="softskills">
+      <div class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2 data-i18n="soft.title">Soft Skills</h2>
+      </div>
+
+      <div class="soft-grid">
+        <article class="card soft-card reveal">
+          <span class="soft-card__icon">✦</span>
+          <h3 data-i18n="soft.mentor_t">Mentoring</h3>
+          <p data-i18n="soft.mentor_d">Onboarding neuer Kolleg:innen und Durchführung konstruktiver Code-Reviews.</p>
+        </article>
+        <article class="card soft-card reveal">
+          <span class="soft-card__icon">⚙</span>
+          <h3 data-i18n="soft.debug_t">Troubleshooting &amp; Debugging</h3>
+          <p data-i18n="soft.debug_d">Analyse und Behebung komplexer Bugs in großen Codebasen.</p>
+        </article>
+        <article class="card soft-card reveal">
+          <span class="soft-card__icon">⟳</span>
+          <h3 data-i18n="soft.adapt_t">Adaptivität</h3>
+          <p data-i18n="soft.adapt_d">Schnelle Einarbeitung in komplexe Legacy-Codebasen und neue Technologien.</p>
+        </article>
+        <article class="card soft-card reveal">
+          <span class="soft-card__icon">◈</span>
+          <h3 data-i18n="soft.struct_t">Struktur-Verbesserung</h3>
+          <p data-i18n="soft.struct_d">Gezieltes Refactoring und Weiterentwicklung bestehender App-Architekturen.</p>
+        </article>
+        <article class="card soft-card reveal">
+          <span class="soft-card__icon">◎</span>
+          <h3 data-i18n="soft.prag_t">Pragmatismus</h3>
+          <p data-i18n="soft.prag_d">Fokus auf die Balance zwischen Code-Qualität und Projektzielen.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- ===== Education ===== -->
     <section class="section" id="education">
       <div class="section__head reveal">
-        <span class="section__index">05</span>
+        <span class="section__index">07</span>
         <h2 data-i18n="education.title">Bildung</h2>
       </div>
 
@@ -404,10 +494,61 @@
       </div>
     </section>
 
+    <!-- ===== Languages ===== -->
+    <section class="section" id="languages">
+      <div class="section__head reveal">
+        <span class="section__index">08</span>
+        <h2 data-i18n="lang.title">Sprachen</h2>
+      </div>
+
+      <div class="lang-grid">
+        <article class="card lang-card reveal">
+          <div class="lang-card__top">
+            <h3>Deutsch</h3>
+            <span class="lang-card__level" data-i18n="lang.de_level">Muttersprache</span>
+          </div>
+          <div class="lang-bar"><span style="width:100%"></span></div>
+        </article>
+        <article class="card lang-card reveal">
+          <div class="lang-card__top">
+            <h3 data-i18n="lang.en_name">Englisch</h3>
+            <span class="lang-card__level" data-i18n="lang.en_level">Fließend</span>
+          </div>
+          <div class="lang-bar"><span style="width:85%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Interests ===== -->
+    <section class="section" id="interests">
+      <div class="section__head reveal">
+        <span class="section__index">09</span>
+        <h2 data-i18n="int.title">Interessen</h2>
+      </div>
+
+      <div class="int-grid">
+        <article class="card int-card reveal">
+          <span class="int-card__icon">⌂</span>
+          <h3 data-i18n="int.tech_t">Technik &amp; Kreativität</h3>
+          <p data-i18n="int.tech_d">Leidenschaft für Smart-Home-Automatisierung und technisches Setup sowie kreativen Videoschnitt.</p>
+        </article>
+        <article class="card int-card reveal">
+          <span class="int-card__icon">❋</span>
+          <h3 data-i18n="int.nature_t">Natur &amp; Hund</h3>
+          <p data-i18n="int.nature_d">Regelmäßige Ausflüge ins Grüne gemeinsam mit meinem Hund — zur Erholung und Inspiration.</p>
+        </article>
+        <article class="card int-card reveal">
+          <span class="int-card__icon">➜</span>
+          <h3 data-i18n="int.sport_t">Sport &amp; Ausgleich</h3>
+          <p data-i18n="int.sport_d">Aktiver Laufsport als Ausgleich zum Fokus am Bildschirm.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- ===== Contact ===== -->
     <section class="section section--contact" id="contact">
       <div class="contact card reveal">
-        <span class="section__index">06</span>
+        <span class="section__index">10</span>
         <h2 data-i18n="contact.title">Lassen Sie uns sprechen</h2>
         <p data-i18n="contact.sub">
           Sie suchen eine:n erfahrene:n Android- bzw. Kotlin-Multiplatform-Entwickler:in?
@@ -438,13 +579,26 @@
           </div>
         </div>
 
-        <a href="mailto:sebastian-hinz@gmx.de" class="btn btn--primary btn--lg" data-i18n="contact.cta">Nachricht schreiben</a>
+        <div class="contact__actions">
+          <a href="mailto:sebastian-hinz@gmx.de" class="btn btn--primary btn--lg" data-i18n="contact.cta">Nachricht schreiben</a>
+          <a href="assets/cv/Lebenslauf_Sebastian_Hinz.pdf" class="btn btn--ghost btn--lg" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            <span data-i18n="contact.cv">Lebenslauf herunterladen</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>© <span id="year">2026</span> Sebastian Hinz</p>
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/sebastian-hinz-88b16917a" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a href="assets/cv/Lebenslauf_Sebastian_Hinz.pdf" download data-i18n="footer.cv">Lebenslauf</a>
+    </div>
     <p class="footer__note" data-i18n="footer.note">Mit Kotlin-Herz in Berlin gebaut.</p>
   </footer>
 
