@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastian Hinz — Senior Android &amp; Kotlin Multiplatform Developer</title>
+  <meta name="description" content="Sebastian Hinz – Senior Android Developer aus Berlin mit langjähriger Erfahrung in Kotlin, Jetpack Compose, Clean Architecture und Kotlin Multiplatform (KMP/CMP)." />
+  <meta name="author" content="Sebastian Hinz" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sebastian Hinz — Senior Android & Kotlin Multiplatform Developer" />
+  <meta property="og:description" content="Langjährige Erfahrung in Kotlin, Jetpack Compose, Clean Architecture und Kotlin Multiplatform." />
+  <meta property="og:image" content="assets/img/sebastian-hinz.png" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- Ambient background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" aria-label="Sebastian Hinz">
+      <span class="nav__brand-mark">SH</span>
+      <span class="nav__brand-text">Sebastian&nbsp;Hinz</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#about" data-i18n="nav.about">Profil</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#project" data-i18n="nav.project">Projekt</a>
+      <a href="#experience" data-i18n="nav.experience">Erfahrung</a>
+      <a href="#education" data-i18n="nav.education">Bildung</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+
+    <div class="nav__controls">
+      <button class="pill lang-toggle" id="langToggle" type="button" aria-label="Sprache wechseln">
+        <span class="lang-toggle__opt" data-lang="de">DE</span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__opt" data-lang="en">EN</span>
+      </button>
+      <button class="pill icon-btn" id="themeToggle" type="button" aria-label="Theme wechseln">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+
+    <button class="nav__burger" id="burger" type="button" aria-label="Menü" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===== Hero (immediately visible) ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Senior Android &amp; Kotlin Multiplatform Developer</p>
+          <h1 class="hero__title">
+            <span data-i18n="hero.hello">Hallo, ich bin</span>
+            <span class="hero__name">Sebastian Hinz</span>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">
+            Ich entwickle seit über einem Jahrzehnt native Android-Apps mit Kotlin — von
+            performantem State-Management über saubere Architektur bis hin zu
+            plattformübergreifenden Lösungen mit Kotlin Multiplatform.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta_contact">Kontakt aufnehmen</a>
+            <a href="#project" class="btn btn--ghost" data-i18n="hero.cta_project">Aktuelles Projekt</a>
+          </div>
+
+          <ul class="hero__stats">
+            <li>
+              <strong class="count" data-count="10">10</strong><span class="plus">+</span>
+              <span data-i18n="hero.stat_years">Jahre Android</span>
+            </li>
+            <li>
+              <strong class="count" data-count="30">30</strong><span class="plus">+</span>
+              <span data-i18n="hero.stat_apps">Apps &amp; Features</span>
+            </li>
+            <li>
+              <strong>Kotlin</strong>
+              <span data-i18n="hero.stat_since">seit 2018 primär</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__portrait">
+          <div class="portrait">
+            <img src="assets/img/sebastian-hinz.png" alt="Sebastian Hinz" width="420" height="420" loading="eager" />
+            <span class="portrait__ring" aria-hidden="true"></span>
+          </div>
+          <div class="portrait__badge">
+            <span class="dot"></span>
+            <span data-i18n="hero.badge">Offen für neue Herausforderungen</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint__mouse"></span>
+        <span data-i18n="hero.scroll">Scrollen</span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 data-i18n="about.title">Profil</h2>
+      </div>
+
+      <div class="about">
+        <div class="about__lead reveal">
+          <p data-i18n="about.p1">
+            Als <strong>Senior Android Developer</strong> aus Berlin verbinde ich langjährige
+            Praxis in der nativen App-Entwicklung mit einem klaren Fokus auf moderne,
+            wartbare Architekturen. Kotlin ist seit 2018 meine primäre Sprache — heute
+            arbeite ich täglich mit Jetpack Compose, MVI und Unidirectional Data Flow.
+          </p>
+          <p data-i18n="about.p2">
+            Mein aktueller Schwerpunkt liegt auf <strong>Kotlin Multiplatform (KMP)</strong>
+            und <strong>Compose Multiplatform (CMP)</strong>, um Business-Logik und UI
+            effizient über Android und iOS hinweg zu teilen. Ich bringe komplexe Legacy-Codebasen
+            auf einen modernen Stand, mentore Kolleg:innen und setze KI-gestützte Workflows
+            gezielt für Qualität und Tempo ein.
+          </p>
+        </div>
+
+        <ul class="about__facts">
+          <li class="reveal"><span class="fact__k" data-i18n="about.f_role">Rolle</span><span class="fact__v">Senior Android Developer</span></li>
+          <li class="reveal"><span class="fact__k" data-i18n="about.f_location">Standort</span><span class="fact__v">Berlin, Deutschland</span></li>
+          <li class="reveal"><span class="fact__k" data-i18n="about.f_focus">Fokus</span><span class="fact__v">Kotlin · Compose · KMP/CMP</span></li>
+          <li class="reveal"><span class="fact__k" data-i18n="about.f_langs">Sprachen</span><span class="fact__v" data-i18n="about.f_langs_v">Deutsch (Muttersprache) · Englisch</span></li>
+          <li class="reveal"><span class="fact__k" data-i18n="about.f_status">Status</span><span class="fact__v" data-i18n="about.f_status_v">Offen für neue Projekte</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 data-i18n="skills.title">Technologien &amp; Kenntnisse</h2>
+      </div>
+      <p class="section__sub reveal" data-i18n="skills.sub">
+        Ein Querschnitt der Technologien, mit denen ich produktiv arbeite — mit Schwerpunkt auf
+        dem aktuellen Kotlin-Ökosystem.
+      </p>
+
+      <div class="skills-grid">
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_lang">Sprachen &amp; UI</h3>
+          <ul class="chips">
+            <li class="chip chip--accent">Kotlin</li>
+            <li class="chip">Java</li>
+            <li class="chip chip--accent">Jetpack Compose</li>
+            <li class="chip">XML Layouts</li>
+            <li class="chip">Coil</li>
+            <li class="chip">Glide</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_arch">Architektur</h3>
+          <ul class="chips">
+            <li class="chip chip--accent">MVI</li>
+            <li class="chip">MVVM</li>
+            <li class="chip">MVP</li>
+            <li class="chip chip--accent">Clean Architecture</li>
+            <li class="chip">Unidirectional Data Flow</li>
+            <li class="chip">Use Cases</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_async">Reaktiv &amp; Core</h3>
+          <ul class="chips">
+            <li class="chip chip--accent">Coroutines</li>
+            <li class="chip chip--accent">Flow / Channels</li>
+            <li class="chip">Dagger2</li>
+            <li class="chip">Hilt</li>
+            <li class="chip">Koin</li>
+            <li class="chip">Retrofit</li>
+            <li class="chip">OkHttp</li>
+            <li class="chip">Room</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_multi">Multiplatform &amp; Media</h3>
+          <ul class="chips">
+            <li class="chip chip--accent">Kotlin Multiplatform</li>
+            <li class="chip chip--accent">Compose Multiplatform</li>
+            <li class="chip">ExoPlayer / Media3</li>
+            <li class="chip">Google Maps SDK</li>
+            <li class="chip">Mapbox SDK</li>
+            <li class="chip">GPS-Sensorik</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_devops">Workflow &amp; Tooling</h3>
+          <ul class="chips">
+            <li class="chip">CI/CD · Jenkins</li>
+            <li class="chip">Bitbucket Pipelines</li>
+            <li class="chip">Git-Flow</li>
+            <li class="chip">JUnit</li>
+            <li class="chip">Scrum</li>
+            <li class="chip">Jira</li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal">
+          <h3 data-i18n="skills.c_ai">KI-gestützte Entwicklung</h3>
+          <ul class="chips">
+            <li class="chip chip--accent">Cursor</li>
+            <li class="chip chip--accent">Claude Code</li>
+            <li class="chip" data-i18n="skills.ai_refactor">KI-Refactoring</li>
+            <li class="chip" data-i18n="skills.ai_debug">Bug-Analyse</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Current Project ===== -->
+    <section class="section" id="project">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 data-i18n="project.title">Aktuelles Projekt</h2>
+      </div>
+
+      <div class="project card reveal">
+        <div class="project__header">
+          <div>
+            <span class="tag tag--live"><span class="dot"></span><span data-i18n="project.badge">Privates Projekt · in Entwicklung</span></span>
+            <h3 class="project__name" data-i18n="project.name">KMP / CMP Cross-Platform App (Android &amp; iOS)</h3>
+            <p class="project__desc" data-i18n="project.desc">
+              Eine plattformübergreifende App auf Basis von Kotlin Multiplatform und Compose
+              Multiplatform mit geteilter Business-Logik und UI. Konsequent Offline-First
+              konzipiert, mit Cloud-Backup, moderner Authentifizierung und Abo-Verwaltung.
+            </p>
+          </div>
+          <span class="project__platforms">
+            <span class="platform">Android</span>
+            <span class="platform">iOS</span>
+          </span>
+        </div>
+
+        <div class="project__features">
+          <div class="feature reveal">
+            <span class="feature__icon">◧</span>
+            <h4 data-i18n="project.f_arch_t">MVI Architektur</h4>
+            <p data-i18n="project.f_arch_d">Unidirectional Data Flow mit klar getrennten States, Intents und Reducern.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">⤓</span>
+            <h4 data-i18n="project.f_offline_t">Offline-First</h4>
+            <p data-i18n="project.f_offline_d">Lokale Room-Datenbank als Single Source of Truth — voll funktionsfähig ohne Netz.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">☁</span>
+            <h4 data-i18n="project.f_backup_t">Cloud-Backup</h4>
+            <p data-i18n="project.f_backup_d">Firebase Firestore &amp; Cloud Storage zur sicheren Synchronisation und Datensicherung.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">⚿</span>
+            <h4 data-i18n="project.f_auth_t">Auth &amp; Login</h4>
+            <p data-i18n="project.f_auth_d">Firebase Authentication mit Login über Google und Apple.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">★</span>
+            <h4 data-i18n="project.f_sub_t">Abo-Verwaltung</h4>
+            <p data-i18n="project.f_sub_d">Subscriptions und Entitlements plattformübergreifend über RevenueCat.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">▤</span>
+            <h4 data-i18n="project.f_pdf_t">PDF-Export</h4>
+            <p data-i18n="project.f_pdf_d">Erzeugung von PDF-Dokumenten direkt auf beiden Plattformen mit KmPDF.</p>
+          </div>
+        </div>
+
+        <div class="project__stack">
+          <span class="stack__label" data-i18n="project.stack">Stack</span>
+          <ul class="chips">
+            <li class="chip chip--accent">Kotlin Multiplatform</li>
+            <li class="chip chip--accent">Compose Multiplatform</li>
+            <li class="chip">MVI</li>
+            <li class="chip">Room</li>
+            <li class="chip">Firebase Firestore</li>
+            <li class="chip">Cloud Storage</li>
+            <li class="chip">Firebase Auth</li>
+            <li class="chip">RevenueCat</li>
+            <li class="chip">KmPDF</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 data-i18n="experience.title">Berufserfahrung</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Check24 -->
+        <article class="tl-item reveal">
+          <div class="tl-item__marker"></div>
+          <div class="tl-item__body card">
+            <div class="tl-item__top">
+              <span class="tl-item__period" data-i18n="exp.c24_period">08/2023 – heute</span>
+              <span class="tl-item__badge" data-i18n="exp.current">Aktuell</span>
+            </div>
+            <h3 class="tl-item__role" data-i18n="exp.c24_role">Professional Android Developer</h3>
+            <p class="tl-item__company">Check24 Vergleichsportal Flug GmbH</p>
+            <ul class="tl-item__points">
+              <li data-i18n="exp.c24_1">Umstellung klassischer XML-Layouts auf eine moderne, deklarative UI mit Jetpack Compose.</li>
+              <li data-i18n="exp.c24_2">Architektur-Wechsel von MVVM zu MVI unter strikter Einhaltung von UDF und Use-Case-Patterns.</li>
+              <li data-i18n="exp.c24_3">Robustes State-Management mit Kotlin Coroutines und Flows.</li>
+              <li data-i18n="exp.c24_4">KI-gestützte Entwicklung mit Cursor für Features, Refactorings und Bug-Analyse.</li>
+              <li data-i18n="exp.c24_5">Einarbeitung neuer Kolleg:innen und Durchführung von Code-Reviews im Scrum-Team.</li>
+            </ul>
+            <ul class="chips chips--sm">
+              <li class="chip">Kotlin</li><li class="chip">Jetpack Compose</li><li class="chip">MVI</li>
+              <li class="chip">Dagger2</li><li class="chip">Coroutines</li><li class="chip">Jenkins</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- apprime -->
+        <article class="tl-item reveal">
+          <div class="tl-item__marker"></div>
+          <div class="tl-item__body card">
+            <div class="tl-item__top">
+              <span class="tl-item__period">05/2016 – 08/2021</span>
+            </div>
+            <h3 class="tl-item__role" data-i18n="exp.ap_role">Android Developer</h3>
+            <p class="tl-item__company" data-i18n="exp.ap_company">apprime GmbH · App-Agentur Berlin</p>
+            <ul class="tl-item__points">
+              <li data-i18n="exp.ap_1"><strong>DLR (Forschung):</strong> App zur Erhebung individueller Mobilitätsdaten — hochpräzises Tracking &amp; Google-Maps-Integration.</li>
+              <li data-i18n="exp.ap_2"><strong>Infrastrukturüberwachung:</strong> Visualisierung komplexer Satellitendaten mit Mapbox inkl. spezialisierter Custom-Layer.</li>
+              <li data-i18n="exp.ap_3"><strong>„Higher Self“:</strong> Robuster Video-/Musikplayer für On-Demand-Coaching inkl. Hintergrund-Wiedergabe &amp; Lockscreen-Steuerung.</li>
+              <li data-i18n="exp.ap_4"><strong>E-Commerce:</strong> Mitentwicklung des Shopsystems von DefShop sowie der App der Berlin Fashion Week.</li>
+              <li data-i18n="exp.ap_5"><strong>FitX:</strong> Mitentwicklung der Mitglieder-App zur Trainingssteuerung und Studio-Interaktion.</li>
+              <li data-i18n="exp.ap_6">Migration von Java/MVP zu Kotlin/MVVM zur Optimierung von Wartbarkeit und Performance.</li>
+            </ul>
+            <ul class="chips chips--sm">
+              <li class="chip">Kotlin</li><li class="chip">Java</li><li class="chip">ExoPlayer / Media3</li>
+              <li class="chip">Google Maps SDK</li><li class="chip">Mapbox</li><li class="chip">MVVM</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section" id="education">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 data-i18n="education.title">Bildung</h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="card edu-card reveal">
+          <span class="edu-card__period">2011 – 2014</span>
+          <h3 data-i18n="edu.bht_title">B. Sc. Medieninformatik</h3>
+          <p class="edu-card__inst">Berliner Hochschule für Technik (BHT)</p>
+          <ul class="edu-card__points">
+            <li data-i18n="edu.bht_1">Schwerpunkt: Softwareentwicklung mit Java &amp; Mobile Computing.</li>
+            <li data-i18n="edu.bht_2">Abschlussarbeit: Android-Tippspiel-App (Java, XML, AsyncTask, Picasso).</li>
+            <li data-i18n="edu.bht_3">Praxissemester bei apparent media (Berlin): Service-App zur Tierarztsuche (Native Java).</li>
+          </ul>
+        </article>
+
+        <article class="card edu-card reveal">
+          <span class="edu-card__period">2007 – 2010</span>
+          <h3 data-i18n="edu.htw_title">Angewandte Informatik</h3>
+          <p class="edu-card__inst">Hochschule für Technik und Wirtschaft Berlin</p>
+          <ul class="edu-card__points">
+            <li data-i18n="edu.htw_1">Fundierte Grundlagen in Informatik und Softwareentwicklung.</li>
+            <li data-i18n="edu.htw_2">Wechsel in die Medieninformatik zur gezielten fachlichen Spezialisierung.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="contact card reveal">
+        <span class="section__index">06</span>
+        <h2 data-i18n="contact.title">Lassen Sie uns sprechen</h2>
+        <p data-i18n="contact.sub">
+          Sie suchen eine:n erfahrene:n Android- bzw. Kotlin-Multiplatform-Entwickler:in?
+          Ich freue mich auf Ihre Nachricht.
+        </p>
+
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:sebastian-hinz@gmx.de">
+            <span class="contact__icon">✉</span>
+            <span class="contact__meta">
+              <span class="contact__k">E-Mail</span>
+              <span class="contact__v">sebastian-hinz@gmx.de</span>
+            </span>
+          </a>
+          <a class="contact__link" href="https://www.linkedin.com/in/sebastian-hinz-88b16917a" target="_blank" rel="noopener">
+            <span class="contact__icon">in</span>
+            <span class="contact__meta">
+              <span class="contact__k">LinkedIn</span>
+              <span class="contact__v">sebastian-hinz</span>
+            </span>
+          </a>
+          <div class="contact__link contact__link--static">
+            <span class="contact__icon">⌖</span>
+            <span class="contact__meta">
+              <span class="contact__k" data-i18n="contact.location">Standort</span>
+              <span class="contact__v">Berlin, Deutschland</span>
+            </span>
+          </div>
+        </div>
+
+        <a href="mailto:sebastian-hinz@gmx.de" class="btn btn--primary btn--lg" data-i18n="contact.cta">Nachricht schreiben</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Sebastian Hinz</p>
+    <p class="footer__note" data-i18n="footer.note">Mit Kotlin-Herz in Berlin gebaut.</p>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
