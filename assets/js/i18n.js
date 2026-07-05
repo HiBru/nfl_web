@@ -124,7 +124,7 @@ window.I18N = {
     "lang.title": "Sprachen",
     "lang.de_level": "Muttersprache",
     "lang.en_name": "Englisch",
-    "lang.en_level": "Fließend",
+    "lang.en_level": "B1",
 
     "int.title": "Interessen",
     "int.tech_t": "Technik &amp; Kreativität",
@@ -264,7 +264,7 @@ window.I18N = {
     "lang.title": "Languages",
     "lang.de_level": "Native speaker",
     "lang.en_name": "English",
-    "lang.en_level": "Fluent",
+    "lang.en_level": "B1",
 
     "int.title": "Interests",
     "int.tech_t": "Tech &amp; creativity",
