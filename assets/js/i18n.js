@@ -33,7 +33,7 @@ window.I18N = {
     "about.f_location": "Standort",
     "about.f_focus": "Fokus",
     "about.f_langs": "Sprachen",
-    "about.f_langs_v": "Deutsch (Muttersprache) · Englisch",
+    "about.f_langs_v": "Deutsch (Muttersprache) · Englisch (B1)",
     "about.f_status": "Status",
     "about.f_status_v": "Offen für neue Projekte",
 
@@ -173,7 +173,7 @@ window.I18N = {
     "about.f_location": "Location",
     "about.f_focus": "Focus",
     "about.f_langs": "Languages",
-    "about.f_langs_v": "German (native) · English",
+    "about.f_langs_v": "German (native) · English (B1)",
     "about.f_status": "Status",
     "about.f_status_v": "Open to new projects",
 
